@@ -1,0 +1,140 @@
+    @font-face {
+        font-family: 'Inter';
+        src: url('./fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    :root {
+        /* Couleurs */
+        --color-Lightgray: hsl(0, 0%, 75%);
+
+        --color-Green: hsl(75, 94%, 57%);
+        --color-White: hsl(0, 0%, 100%);
+        --color-Grey-700: hsl(0, 0%, 20%);
+        --color-Grey-800: hsl(0, 0%, 12%);
+        --color-Grey-900: hsl(0, 0%, 8%);
+
+        /* Poids des polices */
+        --font-weight-400: 400;
+        --font-weight-600: 600;
+        --font-weight-800: 800;
+    }
+
+    /* Réinitialisation et base */
+    *,
+    ::before,
+    ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--color-Grey-900);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* Conteneur principal */
+    main {
+        background-color: var(--color-Grey-800);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 384px;
+        padding: 2.4rem 2.4rem 2rem 2.4rem;
+        margin: auto;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 88px;
+    }
+
+    h1 {
+        color: var(--color-White);
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-600);
+        padding-top: 1.8rem;
+    }
+
+    /* Localisation et description */
+    .location {
+        color: var(--color-Green);
+        font-size: 0.9rem;
+        font-weight: var(--font-weight-600);
+        padding: 0.6rem 0
+    }
+
+    .description {
+        color: var(--color-Lightgray);
+        font-weight: var(--font-weight-600);
+        font-size: 0.8rem;
+        padding: 1.1rem 0
+    }
+
+    /* Boutons */
+    a {
+        text-decoration: none;
+    }
+
+    a.button {
+        font-family: 'inter', sans-serif;
+        background-color: var(--color-Grey-700);
+        color: var(--color-White);
+        font-weight: var(--font-weight-800);
+        font-size: 0.8rem;
+        border: none;
+        border-radius: 10px;
+        width: 98%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin: 8px;
+    }
+
+    a.button:hover {
+        background-color: var(--color-Green);
+        color: var(--color-Grey-700);
+        font-weight: var(--font-weight-800);
+        cursor: url('../icons/icons8-interface-utilisateur-naturelle-2-24.png') 0 0, pointer;
+    }
+
+    /* Pied de page */
+    footer {
+        color: var(--color-White);
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+    @media only screen and (max-width: 400px) {
+
+        /* Conteneur principal */
+        main {
+            width: 328px;
+            padding: 1.4rem 1.5rem 1rem 1.5rem;
+        }
+
+        a.button {
+            width: 100%;
+        }
+    }
