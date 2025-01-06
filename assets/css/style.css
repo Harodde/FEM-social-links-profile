@@ -24,39 +24,41 @@
 
     /* Réinitialisation et base */
     *,
-    ::before,
-    ::after {
+    *::before,
+    *::after {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        text-decoration: none;
     }
 
     body {
+        padding: 16px;
         font-family: 'Inter', sans-serif;
         background-color: var(--color-Grey-900);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         min-height: 100vh;
+        gap: 20px;
     }
 
     /* Conteneur principal */
     main {
         background-color: var(--color-Grey-800);
         border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 384px;
+        width: 100%;
+        /* Largeur flexible */
+        min-width: 20rem;
+        max-width: 24rem;
         padding: 2.4rem 2.4rem 2rem 2.4rem;
-        margin: auto;
     }
 
     img {
         border-radius: 50%;
-        width: 88px;
+        width: 5.5rem;
     }
 
     h1 {
@@ -78,8 +80,19 @@
         color: var(--color-Lightgray);
         font-weight: var(--font-weight-600);
         font-size: 0.8rem;
-        padding: 1.1rem 0
+        padding: 1.1rem 0;
     }
+
+    ul.social-links {
+        list-style-type: none;
+        /* Supprime les puces */
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0.5rem 0;
+    }
+
 
     /* Boutons */
     a {
@@ -94,13 +107,10 @@
         font-size: 0.8rem;
         border: none;
         border-radius: 10px;
-        width: 98%;
-        height: 45px;
+        height: 2.81rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
-        margin: 8px;
     }
 
     a.button:hover {
@@ -113,8 +123,6 @@
     /* Pied de page */
     footer {
         color: var(--color-White);
-        position: relative;
-        padding-bottom: 10px;
     }
 
     .attribution {
@@ -130,7 +138,7 @@
 
         /* Conteneur principal */
         main {
-            width: 328px;
+            width: 20, 5rem;
             padding: 1.4rem 1.5rem 1rem 1.5rem;
         }
 
